@@ -1,0 +1,16 @@
+{
+    "name": "agraviador/gs",
+    "description": "Basic Student Grading System",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Agraviador\\Gs\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Agraviador D."
+        }
+    ],
+    "require": {}
+}
