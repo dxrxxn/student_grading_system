@@ -49,7 +49,7 @@ class StudentModel extends Database implements Crud{
       ("UPDATE `students` SET `Name`='$this->name',`course`='$this->course',`year_level`='$this->year_level',`section`='$this->section' WHERE `id` = $this->id");
       if($query->execute()){
         echo "Student Update Succesfully!!\n";
-      } 
+      }
     }
     public function delete($id) {
       $this->id=$id;
@@ -58,7 +58,7 @@ class StudentModel extends Database implements Crud{
       if ($this->conn->query($sql)){
         echo "Student Deleted!!";
       } else {
-        echo "failed". $this->conn->error;
+        echo "Failed!!". $this->conn->error;
       }
 
         
